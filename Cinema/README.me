@@ -1,51 +1,51 @@
-Project: Cinema Room Manager
+# Cinema Room Manager
 
-Description
+Welcome to the Cinema Room Manager! This program allows you to manage seat bookings and view statistics for a cinema theatre. You can display available seats, purchase tickets, and view important statistics about the theatre's occupancy and income.
 
-Running a cinema theatre is no easy business. To help our friends, let's add statistics to your program. The stats will show the current income, total income, the number 
-of available seats, and the percentage of occupancy.
+## Table of Contents
 
-Objectives
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Contributing](#contributing)
+- [License](#license)
 
-Now your menu should look like this:
+## Introduction
 
+Running a cinema theatre involves juggling multiple tasks, including managing seat bookings and keeping track of ticket sales. The Cinema Room Manager simplifies this process by offering a user-friendly interface to perform various actions, such as viewing available seats, purchasing tickets, and checking statistics about the theatre's performance.
+
+## Installation
+
+1. **Clone the Repository:** Clone this repository to your local machine using `git clone https://github.com/YourUsername/Cinema-Room-Manager.git`.
+2. **Navigate to Directory:** Enter the project directory using `cd Cinema-Room-Manager`.
+
+## Usage
+
+1. **Run the Program:** Execute the program by running the main script, such as `python cinema_manager.py`.
+2. **Menu Options:**
+   - Show the seats: Display the current status of all seats in the cinema.
+   - Buy a ticket: Purchase a ticket by selecting a row and seat number.
+   - Statistics: View important statistics about ticket sales and occupancy.
+   - Exit: Terminate the program.
+
+## Examples
+
+```
 1. Show the seats
 2. Buy a ticket
 3. Statistics
 0. Exit
+> 1
 
-When the item Statistics is chosen, your program should print the following information:
-
-    The number of purchased tickets;
-    The number of purchased tickets represented as a percentage. Percentages should be rounded to 2 decimal places;
-    Current income;
-    The total income that shows how much money the theatre will get if all the tickets are sold.
-
-The rest of the menu items should work the same way as before, except the item Buy a ticket shouldn't allow a user to buy a ticket that has already been purchased.
-
-If a user chooses an already taken seat, print That ticket has already been purchased! and ask them to enter different seat coordinates until they pick an available seat. 
-Of course, you shouldn't allow coordinates that are out of bounds. If this happens, print Wrong input! and ask to enter different seat coordinates until the user picks an 
-available seat.
-
-Examples
-
-The greater-than symbol followed by a space (> ) represents the user input. Note that it's not part of the input.
-
-Enter the number of rows:
-> 6
-Enter the number of seats in each row:
-> 6
-
-1. Show the seats
-2. Buy a ticket
-3. Statistics
-0. Exit
-> 3
-
-Number of purchased tickets: 0
-Percentage: 0.00%
-Current income: $0
-Total income: $360
+Cinema:
+  1 2 3 4 5 6
+1 B S S S S S
+2 S S S S S S
+3 S S S S S S
+4 S S S B S S
+5 S S S S S S
+6 S S S S S S
 
 1. Show the seats
 2. Buy a ticket
@@ -75,57 +75,18 @@ Total income: $360
 2. Buy a ticket
 3. Statistics
 0. Exit
-> 2
-
-Enter a row number:
-> 1
-Enter a seat number in that row:
-> 1
-
-That ticket has already been purchased!
-
-Enter a row number:
-> 10
-Enter a seat number in that row:
-> 20
-
-Wrong input!
-
-Enter a row number:
-> 4
-Enter a seat number in that row:
-> 4
-
-Ticket price: $10
-
-1. Show the seats
-2. Buy a ticket
-3. Statistics
-0. Exit
-> 1
-
-Cinema:
-  1 2 3 4 5 6
-1 B S S S S S
-2 S S S S S S
-3 S S S S S S
-4 S S S B S S
-5 S S S S S S
-6 S S S S S S
-
-1. Show the seats
-2. Buy a ticket
-3. Statistics
-0. Exit
-> 3
-
-Number of purchased tickets: 2
-Percentage: 5.56%
-Current income: $20
-Total income: $360
-
-1. Show the seats
-2. Buy a ticket
-3. Statistics
-0. Exit
 > 0
+
+```
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to create a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Manage your cinema theatre with ease using the Cinema Room Manager. Experience a streamlined process for seat bookings, ticket sales, and performance analysis. Enjoy the world of cinema management at your fingertips!
